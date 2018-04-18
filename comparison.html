@@ -1,0 +1,548 @@
+<div class="content">
+
+    <!-- Main charts  -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <h3 style="font-weight: bold" class="panel-title">
+                        <i class="glyphicon glyphicon-user position-left"></i>
+                        Customer Journey</h3>
+                </div>
+                <div class="container-fluid">
+                    <!--Store A for Customer Journey-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="panel-heading">
+                                        <h5 style="font-weight: bold" class="panel-title">Store A</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="funnel">
+                                        <div id="chart1div" style="width: 650px; height:450px "></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="progress blue">
+                                        <span class="progress-left">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <div class="progress-value">15300 $</div>
+                                    </div>
+                                    <div class="sales-text">
+                                        <h3>Total Sales</h3>
+                                    </div>
+                                    <!-- <div class="chart svg-center" id="d3-donut-arc-tween" #donut></div> -->
+                                    <!-- DONUT LOADER -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <!--Store B for Customer Journey-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel-heading">
+                                            <h5 style="font-weight: bold" class="panel-title">
+                                                Store B</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="funnel">
+                                        <div id="chart2div" style="width: 650px; height:450px "></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="progress blue">
+                                        <span class="progress-left">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <div class="progress-value">15300 $</div>
+                                    </div>
+                                    <div class="sales-text">
+                                        <h3>Total Sales</h3>
+                                    </div>
+                                    <!-- <div class="chart svg-center" id="d3-donut-arc-tween" #donut></div> -->
+                                    <!-- DONUT LOADER -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative cust_jour" id="traffic-sources"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <h2 style="font-weight: bold" class="panel-title">
+                        <i style="font-size: 19px;" class="glyphicon glyphicon-zoom-in position-left"></i>
+                        Customer Insights</h2>
+                </div>
+                <!--Store A for  Insights-->
+                <div class="container-fluid">
+                    <div class="col-lg-12">
+                        <h5 style="font-weight: bold" class="panel-title"> Store A</h5>
+                    </div>
+                    <div class="row grid-divider">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="insights-header">
+                                    <h3>17:48</h3>
+                                    <h5>Dwell Time</h5>
+                                </div>
+                                <div style="float: right;">
+                                    <h3>
+                                        <span class="text-success-600 trend">
+                                            <i class="icon-stats-growth2 position-left"></i> 3.12%</span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="chart" id="dwellTime"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="insights-header">
+                                        <h3>Grocery</h3>
+                                        <h5>Most Visited Spot</h5>
+                                    </div>
+                                    <div style="float: right;">
+                                        <h3>
+                                            <span class="text-success-600 trend">
+                                                <i class="icon-stats-growth2 position-left"></i> 6.89%</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="chart svg-center" id="mostVis"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="insights-header">
+                                        <h3>58%</h3>
+                                        <h5>Emotions</h5>
+                                    </div>
+                                    <div style="float: right;">
+                                        <h3 style="float: right;">
+                                            <span class="text-danger trend">
+                                                <i class="icon-stats-decline2 position-left"></i> - 5.78%</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="chart svg-center" id="emotions"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <!--Store B for  Insights-->
+                <div class="container-fluid">
+                    <div class="col-lg-12">
+                        <h5 style="font-weight: bold" class="panel-title"> Store B</h5>
+                    </div>
+                    <div class="row grid-divider">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="insights-header">
+                                    <h3>17:48</h3>
+                                    <h5>Dwell Time</h5>
+                                </div>
+                                <div style="float: right;">
+                                    <h3>
+                                        <span class="text-success-600 trend">
+                                            <i class="icon-stats-growth2 position-left"></i> 3.12%</span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="chart" id="dwellTime1"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="insights-header">
+                                        <h3>Grocery</h3>
+                                        <h5>Most Visited Spot</h5>
+                                    </div>
+                                    <div style="float: right;">
+                                        <h3>
+                                            <span class="text-success-600 trend">
+                                                <i class="icon-stats-growth2 position-left"></i> 6.89%</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="chart svg-center" id="mostVis1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="insights-header">
+                                        <h3>58%</h3>
+                                        <h5>Emotions</h5>
+                                    </div>
+                                    <div style="float: right;">
+                                        <h3 style="float: right;">
+                                            <span class="text-danger trend">
+                                                <i class="icon-stats-decline2 position-left"></i> - 5.78%</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="chart svg-center" id="emotions1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="position-relative" id="traffic-sources"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <h3 style="font-weight: bold" class="panel-title">
+                        <i style="font-size:19px" class="glyphicon glyphicon-info-sign position-left"></i>
+                        Customer Demographics</h3>
+                </div>
+
+                <!--Store B for Customer Demographics-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h5 style="font-weight: bold" class="panel-title">Store A</h5>
+                            <!-- <p class="content-group">
+                                    <label class="radio-inline"><input type="radio" name="stacked-multiple" class="stacked-multiple" value="multiples" checked="checked"> Multiples</label>
+                                    <label class="radio-inline"><input type="radio" name="stacked-multiple" class="stacked-multiple" value="stacked"> Stacked</label>
+                                  </p> -->
+                            <div class="chart" id="cust_demo"></div>
+                            <br>
+                            <br>
+                            <!-- <highcharts-chart
+                                [Highcharts]="BarGraph"
+                                [options]="barGraph"
+                                style="width: 100%; height: 350px; display: block;"
+                              ></highcharts-chart> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!--Store B for Customer Demographics-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h5 style="font-weight: bold" class="panel-title">Store B</h5>
+
+                            <!-- <p class="content-group">
+                                    <label class="radio-inline"><input type="radio" name="stacked-multiple" class="stacked-multiple" value="multiples" checked="checked"> Multiples</label>
+                                    <label class="radio-inline"><input type="radio" name="stacked-multiple" class="stacked-multiple" value="stacked"> Stacked</label>
+                                  </p> -->
+                            <div class="chart" id="cust_demo1"></div>
+                            <br>
+                            <br>
+                            <!-- <highcharts-chart
+                                [Highcharts]="BarGraph"
+                                [options]="barGraph"
+                                style="width: 100%; height: 350px; display: block;"
+                              ></highcharts-chart> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative" id="traffic-sources"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <h2 style="font-weight: bold" class="panel-title">
+                        <i style="font-size: 19px;" class="glyphicon glyphicon-zoom-in position-left"></i>
+                        Employees Insights</h2>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row grid-divider">
+                        <div class="col-md-4">
+
+                            <div class="row">
+                                <div class="panel text-center">
+                                    <div class="panel-body">
+                                        <div class="content-group-sm svg-center position-relative">
+                                            <h3>Footfall: Salesperson</h3>
+                                            <h1 style="font-size: 37px;"><span style="color: #ff7f0e;">7:53</span>
+                                                <span style="font-size: 20px;">vs</span> <span style="color: #1f77b4;">9:53</span></h1>
+                                        </div>
+                                        <div id="hours-available-bars"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="panel text-center">
+                                    <div class="panel-body">
+                                        <div class="inline1">
+                                            %90
+                                        </div>
+                                        <div class="inline2">
+                                            %80
+                                        </div>
+                                        <div class="heading-elements">
+                                        </div>
+                                        <div class="content-group-sm svg-center position-relative">
+                                            <h3></h3>
+                                            <h3>Shift: Night Shift</h3>
+                                        </div>
+                                        <div class="inline1">
+                                            9/10 on Duty
+                                        </div>
+                                        <div class="inline2">
+                                            8/10 on Duty
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- /progress counters -->
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="insights-header">
+                                        <h3>58%</h3>
+                                        <h5>Emotions</h5>
+                                    </div>
+                                    <div style="float: right;">
+                                        <h3 style="float: right;">
+                                            <span class="text-danger trend">
+                                                <i class="icon-stats-decline2 position-left"></i> - 5.78%</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="chart svg-center" id="employee_emotion1"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="insights-header">
+                                        <h3>58%</h3>
+                                        <h5>Emotions</h5>
+                                    </div>
+                                    <div style="float: right;">
+                                        <h3 style="float: right;">
+                                            <span class="text-danger trend">
+                                                <i class="icon-stats-decline2 position-left"></i> - 5.78%</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="chart svg-center" id="employee_emotion2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="position-relative" id="traffic-sources"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <h3 style="font-weight: bold" class="panel-title">
+                        <i class="glyphicon glyphicon-user position-left"></i>
+                        SP Mood to Customer Mood</h3>
+                </div>
+                <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel-heading">
+                                <h5 style="font-weight: bold" class="panel-title">
+                                    Store A</h5>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container-fluid">
+                    <!--Store A for Sp mood to Cutomer Mood-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <!-- <div class="funnel" #funnel></div>                   -->
+                                <div class="col-lg-12">
+                                    <div class="example-config">
+                                    </div>
+                                    <div>
+                                        <div id="spmood1" style="width: 100%; height:450px "></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Store B for Sp mood to Cutomer Mood-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel-heading">
+                                            <h5 style="font-weight: bold" class="panel-title">
+                                                Store B</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="example-config">
+                                    </div>
+                                    <div>
+                                        <div id="spmood2" style="width: 100%; height:450px "></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative cust_jour" id="traffic-sources"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <h3 style="font-weight: bold" class="panel-title">
+                        <i class="glyphicon glyphicon-user position-left"></i>
+                        Customer Engaggement Time to Mood</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel-heading">
+                            <h5 style="font-weight: bold" class="panel-title">
+                                Store A</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <!--Cutomer Engaggment for store A-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <!-- <div class="funnel" #funnel></div>      -->
+                                <div class="col-lg-12">
+                                    <div class="example-config">
+                                    </div>
+                                    <div class="funnel">
+                                        <div id="custengage1" style="width: 100%; height:450px "></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Cutomer Engaggment for store B-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel-heading">
+                                            <h5 style="font-weight: bold" class="panel-title">
+                                                Store B</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="example-config">
+                                    </div>
+                                    <div class="funnel">
+                                        <div id="custengage2" style="width: 100%; height:450px"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative cust_jour" id="traffic-sources"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /main charts -->
+
+
+    <!-- Dashboard content -->
+
+    <!-- /dashboard content -->
+
+
+    <!-- Footer -->
+    <div class="footer text-muted">
+        &copy; 2018.
+        <a href="#">Copyright</a> IX
+    </div>
+    <!-- /footer -->
+
+</div>

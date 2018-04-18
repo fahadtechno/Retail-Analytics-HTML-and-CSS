@@ -1,0 +1,173 @@
+<div class="navbar navbar-inverse bg-indigo navbar-fixed-top">
+    <!-- Main navbar -->
+    <div class="navbar-header">
+        <ul class="nav navbar-nav visible-xs-block">
+            <li>
+                <a data-toggle="collapse" data-target="#navbar-mobile">
+                    <i class="icon-tree5"></i>
+                </a>
+            </li>
+            <li>
+                <a class="sidebar-mobile-main-toggle">
+                    <i class="icon-paragraph-justify3"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+
+        <div class="navbar-right">
+            <a class="legitRipple">
+                <img src="assets/images/demo/users/face11.jpg" class="img-circle img-responsive navbar-img" alt="">
+            </a>
+
+        </div>
+    </div>
+    <!-- /main navbar -->
+</div>
+<div class="page-container">
+    <div class="page-content">
+        <div class="sidebar sidebar-main sidebar-default sidebar-fixed">
+
+            <!-- Main sidebar -->
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user-material">
+                    <div class="category-content">
+                        <div class="sidebar-user-material-content">
+                            <a href="#" class="legitRipple">
+                                <img src="assets/images/demo/users/face11.jpg" class="img-circle img-responsive" alt="">
+                            </a>
+                            <h6>Hi</h6>
+                            <span class="text-size-small">Maria</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /user menu -->
+
+
+                <!-- Main navigation  -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+
+                            <!-- Main -->
+                            <li class="navigation-header">
+                                <span>Main</span>
+                                <i class="icon-menu" title="Main pages"></i>
+                            </li>
+                            <li>
+                                <a href="/dashboard">
+                                    <i class="icon-home4"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/salesperson">
+                                    <i class="icon-user-plus"></i>
+                                    <span>Sales Person</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/comparison">
+                                    <i class="icon-width"></i>
+                                    <span>Comparison</span>
+                                </a>
+                            </li>
+                            <!-- /main -->
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+                <!-- Logo -->
+                <div class="sidebar-category sidebar-category-visible" style="margin-top: 100px;">
+                    <div>
+                        <img style="width: 100%;" src="../../../assets/images/retailer_logo.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- /main sidebar -->
+
+        </div>
+        <div class="content-wrapper">
+
+            <!-- Page header  -->
+            <div class="page-header page-header-default">
+                <div class="page-header-content">
+                    <div class="page-title">
+                    </div>
+
+                </div>
+
+                <div class="breadcrumb-line">
+                    <ul class="breadcrumb-elements">
+                        <li>
+                            <a class="dateRange" style="color:#166f99">From:</a>
+                        </li>
+                        <li>
+                            <div class="form-group has-feedback has-feedback-right">
+                                <input id="date1" type="date" class="form-control input-lg">
+                                <div class="form-control-feedback">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+                            <a class="dateRange" style="color:#166f99">To:</a>
+                        </li>
+                        <li>
+                            <div class="form-group has-feedback has-feedback-right">
+                                <input id="date2" type="date" class="form-control input-lg" value="2013-09-02">
+                                <div class="form-control-feedback">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown store">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span style="font-weight:bold; color:#166f99">Store :</span>
+                                Malir Branch
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a ng-click="$ctrl.store='Malir Branch'">
+                                        <i class="icon-statistics"></i> Malir Branch</a>
+                                </li>
+                                <li>
+                                    <a ng-click="$ctrl.store='Nazimabad Branch'">
+                                        <i class="icon-statistics"></i> Nazimabad Branch</a>
+                                </li>
+                                <li>
+                                    <a ng-click="$ctrl.store='Gulshan Branch'">
+                                        <i class="icon-statistics"></i> Gulshan Branch</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a ng-click="$ctrl.store='Johar Branch'">
+                                        <i class="icon-statistics"></i> Johar Branch</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="go" href="#" style="color:#166f99">
+                                <i class="glyphicon glyphicon-arrow-right"></i> Go</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /page header -->
+
+        </div>
+    </div>
